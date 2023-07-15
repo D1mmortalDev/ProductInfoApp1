@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ProductDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgViewProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtViewProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/abhaya_libre_semibold"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imgViewProductImage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imgViewProductImage"
+                app:layout_constraintTop_toBottomOf="@+id/imgViewProductImage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtViewProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="TextView"
+                android:textAllCaps="true"
+                android:textColor="#bfb3b8"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewProductName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtViewProductName"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewProductName" />
+
+            <TextView
+                android:id="@+id/txtViewProductDesc"
+                android:layout_width="match_parent"
+                android:layout_height="323dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#f2eff0"
+                android:fontFamily="@font/adamina"
+                android:justificationMode="inter_word"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="TextView"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewProductPrice"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txtViewProductPrice"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewProductPrice" />
+
+            <ScrollView
+                android:id="@+id/SCROLLER_ID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="648dp">
+
+                <TextView
+                    android:id="@+id/TEXT_STATUS_ID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
